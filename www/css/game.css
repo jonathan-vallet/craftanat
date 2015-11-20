@@ -1,0 +1,298 @@
+@CHARSET "UTF-8";
+
+body {
+	padding: 50px 0 0 0;
+	font-family: 'Lato', arial, sans-serif;
+	background: #56bc94 url(../images/pattern-1.png) repeat fixed;
+}
+
+.popover-content {
+	white-space: pre-line;
+	font-size: 14px;
+	line-height: 20px;
+}
+
+.componentList {
+    list-style: none;
+    text-align: right;
+    font-weight: bold;
+}
+
+.componentList li {
+    padding: 0;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.icon {
+    background: url(../images/icon_sprite.jpg) no-repeat;
+    width: 40px;
+    height: 40px;
+    text-indent: 40px;
+    line-height: 40px;
+    overflow: hidden;
+    display: block;
+    vertical-align: middle;
+}
+
+.icon.muscle {
+    background-position: 0 0;
+}
+.icon.bone {
+    background-position: -40px 0;
+}
+.icon.ligament {
+    background-position: -80px 0;
+}
+.icon.artery {
+    background-position: -120px 0;
+}
+.icon.vein {
+    background-position: -160px 0;
+}
+.icon.nerve {
+    background-position: -200px 0;
+}
+
+#gameList {
+    font-size: 0;
+}
+
+#gameList ul {
+    list-style: none;
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 5px;
+    margin: 0 0 25px;
+}
+
+#gameList ul.general {
+    display: block;
+}
+
+#gameList ul.general li {
+     background: none;
+     border-color: transparent;
+}
+
+#gameList h2 {
+    font-size: 16px;
+    line-height: 18px;
+    margin: 10px 0;
+}
+
+#gameList h2 span {
+	background: #56bc94;
+	border-radius: 50%;
+	height: 16px;
+	width: 16px;
+	display: inline-block;
+	text-align: center;
+    font-weight: bold;
+    color: white;
+    font-size: 12px;
+    margin-left: 5px;
+    line-height: 16px;
+    cursor: help;
+}
+
+#gameList li {
+	box-sizing: border-box;
+    font-size: 14px;
+    padding: 11px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background: #F1F1F1;
+    border-bottom: 3px solid #F1F1F1;
+}
+
+#gameList li:hover {
+	padding: 10px 10px 11px;
+	border-top: 1px solid;
+	border-left: 1px solid;
+	border-right: 1px solid;
+}
+
+p.component {
+    font-weight: bold;
+    color: #4C4;
+}
+
+p.component.disabled {
+    color: #C44;
+}
+
+#gameList li.notAvailable {
+    border-color: #AAA;
+    color: #AAA;
+}
+#gameList li.notCraftable {
+    border-color: #bc5694;
+    color: #bc5694;
+}
+#gameList li.craftable {
+    border-color: #56bc94;
+    color: #56bc94;
+}
+#gameList li.crafted {
+    border-color: #5694BC;
+    color: #5694BC;
+}
+
+#clickImageContainer {
+	position: relative;
+}
+
+#clickImageOverlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	cursor: crosshair;
+	z-index: 10;
+}
+
+.graphicAnswer {
+	box-sizing: border-box;
+	position: absolute;
+	border-radius: 200px;
+	border: 1px solid green;
+	background: rgba(200, 255, 200, 0.5);
+	width: 10px;
+	height: 10px;
+}
+
+#schemaImageContainer {
+	position: relative;
+}
+
+#schemaImageContainer img {
+	margin-left: 200px;
+}
+
+#schemaImageContainer input[type='text'] {
+	position: absolute;
+	height: 34px;
+	margin-top: -17px;
+	width: 180px;
+	z-index: 2;
+}
+
+#schemaImageContainer input[type='text']:focus + span,
+#schemaImageContainer input[type='text']:focus + span:before,
+#schemaImageContainer input[type='text']:focus + span:after {
+	background: #66afe9;
+}
+
+#schemaImageContainer span {
+	position: absolute;
+	height: 1px;
+	background: #CCC;
+	margin-left: 200px;
+}
+#schemaImageContainer span:after {
+	content: '';
+	position: absolute;
+	right: -2px;
+	width: 5px;
+	height: 5px;
+	border-radius: 7px;
+	background: #CCC;
+	top: -2px;
+}
+#schemaImageContainer span:before {
+	content: '';
+	position: absolute;
+	left: -2px;
+	width: 5px;
+	height: 5px;
+	border-radius: 7px;
+	background: #CCC;
+	top: -2px;
+}
+
+#skeleton {
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	height: 912px;
+}
+
+#skeleton img {
+	position: absolute;
+	left: 50%;
+	margin-left: -410px;
+}
+
+#result {
+	font-size: 22px;
+}
+
+#result h1 {
+	background: url(../images/trophee-icon.png) no-repeat left;
+	line-height: 90px;
+	padding-left: 100px;
+}
+
+#result .btn {
+    margin-bottom: 20px;   
+}
+
+.graphicContainer {
+	position: relative;
+}
+
+span.graphicAnswer {
+	box-sizing: border-box;
+	position: absolute;
+	border-radius: 50%;
+	border: 1px solid green;
+	background: rgba(200, 255, 200, 0.8);
+}
+
+.question {
+    margin: 20px;
+}
+
+.question span.questionNumber {
+	font-size: 20px;
+	line-height: 30px;
+	width: 40px;
+	text-align: center;
+	height: 40px;
+	border: 4px solid #C44;
+	border-radius: 50%;
+	display: inline-block;
+	margin-right: 15px;
+	color: #333;
+}
+
+p.checkbox {
+    margin-left: 20px!important;
+    padding: 0;
+    float: none;
+}
+
+p.checkbox label {
+    margin-left: 20px!important;
+    padding: 0!important;
+    float: none;
+}
+
+p.checkbox input {
+    margin-left: 0!important;
+    padding: 0!important;
+    position: relative;
+    float: none;
+    display: inline-block;
+}
+
+.question span.questionNumber.correct {
+	border-color: #4C4;
+}
+
+.question span {
+    color: #44A;
+    font-weight: bold;
+}

@@ -1,0 +1,37 @@
+<?php
+define('ENV_LEVEL_DEV', 'DEV');
+define('ENV_LEVEL_PREPROD', 'PREPROD');
+define('ENV_LEVEL_PROD', 'PROD');
+define('SGBD_HOST', 'localhost');
+define('SGBD_USER', 'root');
+define('SGBD_PASSWORD', '');
+define('SGBD_DB', 'osteo');
+define('LOG_MIN_LEVEL', 0);
+define('LOG_DIR', 'D:\programmation\www\osteo\logs');
+define('LOG_FOPEN_MODE', 'ab');
+define('IS_FILE_LOG_ENABLED', true);
+define('ENV_LEVEL', 'DEV');
+define('SMARTY_TEMPLATES_DIR', 'D:\programmation\www\craftanat\templates');
+define('SMARTY_TEMPLATES_C_DIR', 'D:\programmation\www\craftanat\templates_c');
+define('SMARTY_CACHE_DIR', 'D:\programmation\www\craftanat\cache');
+define('ROOT_DIR', 'D:\programmation\www\craftanat');
+define('WWW_DIR', 'D:\programmation\www\craftanat\www/');
+define('IMAGE_PATH', 'http://localhost/images/');
+define('CSS_DIR', 'http://localhost/css/');
+define('JS_DIR', 'http://localhost/js/');
+define('SOUND_DIR', 'http://localhost/sounds/');
+define('IMAGE_PATH_FROM_ROOT', 'D:\programmation\www\osteo\www/images/');
+define('MINIFY_JS', false);
+define('MINIFY_CSS', false);
+define('PHP_INI_PATH', '/etc/php5/apache2/php.ini');
+define('REAL_TIME_ENGINE_FREQUENCY', 2);
+define('DIALOG_ENGINE_FREQUENCY', 10);
+define('SCHEDULE_ENGINE_FREQUENCY', 900);
+define('PLAYER_INACTIVITY_DELAY', 60);
+define('GAME_IS_IN_BETA', true);
+define('GAME_IS_PEOPLE_LIMITED', true);
+define('GAME_IS_PLAYTEST_LIMITED', false);
+define('BRAS_DE_FER', 1);
+define('VOGUE_LA_PIROGUE', 2);
+define('WORLD_START_DATE', -19702800);
+?>
